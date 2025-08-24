@@ -54,8 +54,8 @@ public class Startup
                 Scheme = "bearer",
                 BearerFormat = "JWT",
                 In = ParameterLocation.Header,
-                Description = "Insira o token JWT aqui"
-            });
+                Description = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluaXN0cmFkb3JAdGVzdGUuY29tIiwiUGVyZmlsIjoiQWRtIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtIiwiZXhwIjoxNzU2MTMwMTIzfQ.1ZnumTyJ5x0Wb_v8omYRNC99YBpK4zPJT4bxgiNfUx4"
+            }); //gerar novo token e atualizar o valor sempre que for testar
 
             options.AddSecurityRequirement(new OpenApiSecurityRequirement
             {
